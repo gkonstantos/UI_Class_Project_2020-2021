@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/*  <header>    */
+
+header > ul {
+    display:flex;
+    background-color: #537791;
+    color: #f7f6e7;
+    margin-top: 0%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+header > ul > li {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+header > ul > li > a{
+    font-size: 125%;
+    text-decoration: none;
+    color: #F7F6E7;
+}
+
+header > ul > li > h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*  </header>   */
+
+/*  <main>      */
+
+main {
+    display:flex;
+    margin-top:4%;
+    text-align: center;
+    min-height: calc(100vh - 74px);
+}
+
+.services {
+    border-right: 2px solid #393e46;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+.services > a {
+    text-decoration: none;
+    color: #393e46;
+}
+
+.shops {
+    flex: 3 1 auto;
+    color:#393e46;
+    margin-left: 10%;
+}
+
+.shops > h2 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.shop{
+    cursor: pointer;
+}
+
+.shop > img{
+    float:left;
+    /* margin-left: 10%; */
+}
+
+.shop > h2,h3,p {
+    text-align: left;
+}
+
+.shop > p{
+    font-size: 105%;
+    white-space: pre-line;
+}
+
+/*  </main  */
+
+/*  <footer>    */
+
+footer {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #384955;
+    color: #F7F6E7;
+    font-size: 110%;
+}
+
+/*  </footer>   */

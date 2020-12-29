@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  <header> (<nav>)   */
+
+header,
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header {
+    background-color: #537791;
+    color: #fcfcfc;
+    font-size: 1.4rem;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+input[type="text"] {
+    padding-top: 1.25%;
+    padding-bottom: 1.25%;
+    font-size: 1.125rem;
+    border: 2px solid #384955;
+    transition: all 0.5s;
+    overflow: auto;
+}
+
+input[type="text"]:focus {
+    background-color: #384955;
+    color: #fcfcfc;
+    border-color: #fcfcfc;
+    transition: all 0.5s;
+}
+
+input[type="button"] {
+    padding: 1.25% 1.25%;
+    font-size: 1.125rem;
+    border: 2px solid #fcfcfc;
+    background-color: #384955;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input[type="button"]:hover {
+    border: 2px solid #384955;
+    background-color: #fcfcfc;
+    color: #000
+}
+
+input[type="time"] {
+    border: 5px solid #384955;
+    color: #000;
+    outline: 0;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 1.125rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #384955;
+    color: #fcfcfc;
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+}
+
+main {
+    padding-top: 2.5rem;
+    min-height: calc(100vh - 216px);
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+main ul li:nth-child(1){
+    font-size: 1.4rem;
+}
+
+main ul li{
+    margin-top: 5%;
+}
+
+nav{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #9cadbc;
+    color: #fcfcfc;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}   
+
+nav ul li{
+    cursor: pointer;
+}
+

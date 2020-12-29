@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  <header> (<nav>)   */
+
+header,
+nav,
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header {
+    background-color: #537791;
+    color: #fcfcfc;
+    font-size: 1.4rem;
+}
+
+header ul,
+nav ul,
+.list-item ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li,
+nav ul li {
+    cursor: pointer;
+}
+
+/*  </header>(</nav>)   */
+
+/*  <nav>   */
+
+nav {
+    background-color: #9cadbc;
+    color: #fcfcfc;
+    font-size: 1.2rem;
+}
+
+/*  </nav>      */
+
+/*  <main>      */
+
+main,
+.list-item {
+    background-color: #fcfcfc;
+    color: #384955;
+}
+
+main {
+    padding-top: 2.5rem;
+    min-height: calc(100vh - 209px);
+    font-size: 1.125rem;
+}
+
+.list-item {
+    margin: auto auto 1.5rem auto;
+    width: 75%;
+    box-shadow: 0 8px 16px 0 rgba(83, 119, 145, 0.5);
+}
+
+.list-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(172, 101, 135, 0.8);
+    transition: box-shadow 1s;
+}
+
+.route-details {
+    width: 50%;
+    margin-left: 40%;
+    text-align: center;
+    display: none;
+}
+
+.route-details ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+.route-details>ul>li:nth-child(6n -3),
+.route-details>ul>li:nth-child(6n -4),
+.route-details>ul>li:nth-child(6n -5) {
+    font-size: 1.4rem;
+}
+
+/*  <footer>    */
+
+footer {
+    text-align: center;
+    background-color: #384955;
+    color: #fcfcfc;
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+}
+
+/*  </footer>   */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 120%;
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(to right, #e7e6e1, #f7f6e7, #c1c0b9);
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    border: 1px solid #888;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.modal-content-2,
+.modal-content-3 {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #e7e6e1, #f7f6e7, #c1c0b9);
+    top: 0;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    border: 1px solid #888;
+    width: 20%;
+    margin-top: 20%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-content-2 {
+    left: 0;
+}
+
+.modal-content-3 {
+    right: 0;
+}
+
+.modal-content ul,
+.modal-content-2 ul,
+.modal-content-3 ul {
+    list-style-type: none;
+}
+
+.modal-content ul li,
+.modal-content-2 ul li,
+.modal-content-3 ul li {
+    margin-bottom: 1rem;
+}
+
+.modal-content ul li input[type="text"],
+.modal-content-2 ul li input[type="text"] {
+    padding-top: 1.25%;
+    padding-bottom: 1.25%;
+    font-size: 1.125rem;
+    border: 2px solid #384955;
+    transition: all 0.5s;
+    overflow: auto;
+}
+
+input[type="text"]:focus {
+    background-color: #384955;
+    color: #fcfcfc;
+    border-color: #fcfcfc;
+    transition: all 0.5s;
+}
+
+input[type="button"] {
+    padding: 1.25% 1.25%;
+    font-size: 1.125rem;
+    border: 2px solid #fcfcfc;
+    background-color: #384955;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input[type="button"]:hover {
+    border: 2px solid #384955;
+    background-color: #fcfcfc;
+    color: #000
+}
+
+input[type="time"] {
+    border: 5px solid #384955;
+    color: #000;
+    outline: 0;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 1.125rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+ion-icon {
+    font-size: 40px;
+    color: #537791;
+    cursor: pointer;
+    transition:  color 0.5s;
+}
+
+ion-icon:hover {
+    color: purple;
+    transition:  color 0.5s;
+}
+
+main > div > ul > li > p > ion-icon{
+    font-size: 30px;
+    cursor: auto;
+}
