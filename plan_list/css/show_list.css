@@ -36,6 +36,9 @@ nav ul li {
     cursor: pointer;
 }
 
+header ul li:first-child{
+    cursor: auto;
+}
 /*  </header>(</nav>)   */
 
 /*  <nav>   */

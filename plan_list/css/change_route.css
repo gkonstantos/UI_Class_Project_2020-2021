@@ -67,6 +67,8 @@ input[type="button"] {
     color: #fcfcfc;
     cursor: pointer;
     transition: all 0.5s;
+    width: 13.5rem;
+    height: 2rem;
 }
 
 input[type="button"]:hover {
@@ -134,3 +136,6 @@ nav ul li{
     cursor: pointer;
 }
 
+nav ul li:nth-child(2){
+    cursor: auto;
+}

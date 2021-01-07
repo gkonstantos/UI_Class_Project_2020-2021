@@ -11,15 +11,15 @@
 <body>
     <header>
         <ul>
-            <li>E-Planning</li>
+            <li id="e_planning_page">E-Planning</li>
             <li>FAQ</li>
             <li>Πληροφορίες</li>
         </ul>
     </header>
     <nav>
         <ul>
-            <li>Επιστροφή</li>
-            <li id='route_id_message'>adfas</li>
+            <li id="return_to_e_planning_page">Επιστροφή</li>
+            <li id='route_id_message'>Route_ID</li>
             <li id="save_changes">Αποθήκευση αλλαγών</li>
         </ul>
     </nav>
@@ -33,6 +33,9 @@
             <li>Προορισμός</li>
             <li id="end_area_label"></li>
             <li><input type="text" id="end_area" autocomplete="off"></li>
+            <li>
+                <p id="end_point_area_alert"></p>
+            </li>
         </ul>
         <ul>
             <li>Μήνυμα</li>
@@ -40,20 +43,32 @@
             <li><input type="text" id="message" autocomplete="off"></li>
         </ul>
         <ul>
+            <li>Μέσο Μεταφοράς</li>
+            <li id="meansOfTransport_label"></li>
+            <li><input type="text" id="meansOfTransport" autocomplete="off"></li>
+        </ul>
+        <ul>
             <li>Ώρα έναρξης</li>
             <li id="begin_hour_label"></li>
-            <li><input type="text" id="begin_hour" autocomplete="off"></li>
+            <li><input type="time" id="begin_hour" autocomplete="off"></li>
+            <li>
+                <p id="hour_begin_alert"></p>
+            </li>
         </ul>
         <ul>
             <li>Ώρα λήξης</li>
             <li id="end_hour_label"></li>
-            <li><input type="text" id="end_hour" autocomplete="off"></li>
+            <li><input type="time" id="end_hour" autocomplete="off"></li>
+            <li>
+                <p id="hour_end_alert"></p>
+            </li>
         </ul>
     </main>
     <footer>
         Designed by Theodoros Giannopoulos and Giorgos Konstantos
     </footer>
-    <script src="../js/change_route.js"></script>
+    <script src="../js/show_levels_of_crowding_editRoute.js"></script>
+    <script src="../js/edit_route.js"></script>
 </body>
 
 </html>
