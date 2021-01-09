@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="../cs/elderly.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <title>Αρχική σελίδα Ηληκιωμένων</title>
+</head>
+
+<body>
+    <main>
+
+        <h1>Καλωσήρθατε!</h1>
+        <!--Κώδικας δεξιού κουμπιού (αγορών) και μενού του-->
+        <div class="right">
+            <h3>Αγορά προιόντων</h3>
+            <button onclick="dropdownFunc()" class="dropbtn">
+                <ion-icon name="cart-outline"></ion-icon>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <form>
+
+                    <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                    <label for="nme"><span>Συμπληρώστε το ονομά σας</span></label>
+
+                    <input type="text" name="address" class="question" id="nme" required autocomplete="off" />
+                    <label for="nme"><span>Συμπληρώστε την διευθυνσή σας</span></label>
+
+                    <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+                    <label for="msg"><span>Συμπληρώστε τα προιόντα που επιθυμείτε</span></label>
+                    <a href="" onclick="return confirm('Η παραγγελία σας καταχωρήθηκε!');" type="submit"
+                        class="button3">Καταχώρηση</a>
+
+
+                </form>
+            </div>
+        </div>
+
+        <!--Κώδικας αριστερού κουμπιού (πρώτων βοηθειών) και μενού του-->
+        <div class="left">
+            <h3>Πρώτες βοήθειες</h3>
+            <button onclick="dropdownFunc1()" class="dropbtn"> <i class="fa fa-ambulance fa-5x"></i> </button>
+            <div id="myDropdown1" class="dropdown-content">
+                <form>
+
+                    <div class="page">
+                        <div class="page__section">
+                            <span class="page__name">Είστε σίγουροι ότι χρειάζεστε ασθενοφόρο;</span>
+                            <div class="page__toggle">
+                                <label class="toggle">
+                                    <input class="toggle__input" type="checkbox">
+                                    <span class="toggle__label">
+                                        <span class="toggle__text">Ναι!</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="page__toggle">
+                                <label class="toggle">
+                                    <input class="toggle__input" type="checkbox">
+                                    <span class="toggle__label">
+                                        <span class="toggle__text">Όχι!</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <a href="" onclick="return confirm('Οι αρμόδιες υπηρεσίες ειδοποιήθηκαν!');" type="submit"
+                            class="button3">Καταχώρηση</a>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- κώδικας footer -->
+    <footer>
+        <ion-icon name="color-palette-sharp"></ion-icon> Designed by Theodoros Giannopoulos and Giorgos Konstantos
+        <ion-icon name="brush-sharp"></ion-icon>
+    </footer>
+
+
+
+    <!--Κώδικας Javascript με συναρτήσεις για τα dropdowns και τον timer που ειδοποιεί τις αρχές-->
+    <script>
+        function dropdownFunc() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function dropdownFunc1() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+            setTimeout(function () {
+                alert("Υπερβήκατε τον χρόνο αδράνειας. Οι αρμόδιες αρχές ενημερώθηκαν!")
+            }, 10000);
+        }
+    </script>
+
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>

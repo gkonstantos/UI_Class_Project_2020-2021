@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="../cs/parentsbedr.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+        <title>Σελίδα δωματίου γονιών</title>
+
+    </head>
+
+    <body>
+
+        <main>
+            <h1>Δωμάτιο Γονιών</h1>
+            <div class ="h2align">
+                <h2>Επιλέξτε τις συσκευές που θέλετε να χρησιμοποιήσετε!</h2>
+            </div>
+            <div>
+                <div class="container">
+                  <ul>
+                      <h2>Φώτα</h2>
+                    <li><a href="#" id = "one" onclick="ClickButton1()"><i class="fas fa-lightbulb" aria-hidden="true"></i></a></li>
+                    <h2>Τηλέφωνο</h2>
+                    <li><a href="#" id = "two" onclick="ClickButton2()"><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+                    <h2>Τηλεόραση</h2>
+                    <li><a href="#" id = "three" onclick="ClickButton3()"><i class="fas fa-tv" aria-hidden="true"></i></a></li>
+                    <h2>Άνοδος θερμοκρασίας</h2>
+                    <li><a href="#" id = "four" onclick="ClickButton4()"><i class="fas fa-temperature-high" aria-hidden="true"></i></a></li>
+                    <h2>Πτώση θερμοκρασίας</h2>
+                    <li><a href="#" id = "five" onclick="ClickButton5()"><i class="fas fa-temperature-low" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+        </main>
+
+      
+        <footer>
+            <ion-icon name="color-palette-sharp"></ion-icon> Designed by Theodoros Giannopoulos and Giorgos Konstantos.
+            <ion-icon name="brush-sharp"></ion-icon>
+        </footer>
+
+
+        <script>
+
+            function ClickButton1() {
+
+                if (document.getElementById('one').getAttribute("class", "style1") == ("class", "style1")){
+                    document.getElementById('one').setAttribute("class", "style2");
+                }else{
+                    document.getElementById('one').setAttribute("class", "style1");
+                }
+                
+            }
+            
+            function ClickButton2()
+            {
+                if (document.getElementById('two').getAttribute("class", "style1") == ("class", "style1")){
+                    document.getElementById('two').setAttribute("class", "style2");
+                }else{
+                    document.getElementById('two').setAttribute("class", "style1");
+                }
+            }
+            function ClickButton3()
+            {
+                if (document.getElementById('three').getAttribute("class", "style1") == ("class", "style1")){
+                    document.getElementById('three').setAttribute("class", "style2");
+                }else{
+                    document.getElementById('three').setAttribute("class", "style1");
+                }
+            }
+            function ClickButton4()
+            {
+                if (document.getElementById('four').getAttribute("class", "style1") == ("class", "style1")){
+                    document.getElementById('four').setAttribute("class", "style2");
+                }else{
+                    document.getElementById('four').setAttribute("class", "style1");
+                }
+            }
+            function ClickButton5()
+            {
+                if (document.getElementById('five').getAttribute("class", "style1") == ("class", "style1")){
+                    document.getElementById('five').setAttribute("class", "style2");
+                }else{
+                    document.getElementById('five').setAttribute("class", "style1");
+                }
+            }
+
+
+        </script>  
+
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    </body>
+
+</html>
