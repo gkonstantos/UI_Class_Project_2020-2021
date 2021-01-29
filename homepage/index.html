@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Καλωσήρθατε</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <ul>
+            <li>Things of Internet</li>
+            <li><a href="../misc/html/faq.html">FAQ</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li>Συντόμευση σε:</li>
+            <li id="ePlanningButton">e-planning</li>
+            <li id="eHouseButton">e-house</li>
+            <li id="eCareButton">e-care</li>
+            <li id="OnlineOrderButton">Online Order</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="plan">
+            <ul>
+                <li>
+                    <img src="photos/PlanListLogo.jpg" alt="listLogo" width="400px" height="300px">
+                </li>
+                <li class='plan-description'>
+                    <p>
+                        <h2 class='heading'>E-planning</h2><br>
+                        Οργανώστε τη μέρα σας και τις διαδρομές σας χρησιμοποιώντας το πιο απλό εργαλείο<br>
+                        στο διαδίκτυο.
+                    </p>
+                    <ul>
+                        <li>Σχεδιασμός διαδρομών με διαφορετικό μέσο μεταφοράς.</li>
+                        <li>Εμφάνιση διαδρομής στον χάρτη.</li>
+                        <li>Προσθήκη στάσεων-waypoints στη διαδρομή.</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="../plan_list/html/show_list.html">Περισσότερα</a>
+        </div>
+        <div class="house">
+            <ul>
+                <li class='house-description'>
+                    <p>
+                        <h2 class='heading'>E-House</h2><br>
+                        Διαχειριστήτε τις συσκευές σας εύκολα και αποτελεσματικά <br>
+                        ακόμα και αν λείπετε από το σπίτι σας.
+                    </p>
+                    <ul>
+                        <li>Διαχείρηση κάθε συσκευής που <br>υποστηρίζει τη λειτουργία Wi-fi.</li>
+                        <li>Ιδιαίτερα χρήσιμο εν μέσω τηλεργασίας.</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="photos/kitchen.jpg" alt="listLogo" width="400px" height="300px">
+                </li>
+            </ul>
+            <a href="../Manage_Home_Devices/html/home.html">Περισσότερα</a>
+        </div>
+        <div class="care">
+            <ul>
+                <li>
+                    <img src="photos/grandparents.jpg" alt="listLogo" width="400px" height="300px">
+                </li>
+                <li class='care-description'>
+                    <p>
+                        <h2 class='heading'>E-Care</h2><br>
+                        Προστατέψτε τους ηλικωμένους συγγενείς σας,τους οποίους<br>
+                        δεν μπορείτε να επισκέπτεστε συχνά.
+                    </p>
+                    <ul>
+                        <li>Ενσωμάτωση ειδικών αισθητήρων για συνεχής παρακολούθηση υγείας.</li>
+                        <li>Σύνδεση με τις υπηρεσίες του δήμου με σκοπό την παροχή βοήθειας.</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="../Look_After_Elders/html/elderly.html">Περισσότερα</a>
+        </div>
+        <div class="order">
+            <ul>
+                <li class='order-description'>
+                    <p>
+                        <h2 class='heading'>Online Order</h2><br>
+                        Παραγγείλτε εύκολα και γρήγορα το αγαπημένο σας <br>
+                        ρόφημα ή σνακ μέσα σε 2 μόλις λεπτά!
+                    </p>
+                    <ul>
+                        <li>Συνεργασία με υψηλής ποιότητας μαγαζιά.</li>
+                        <li>Απόλυτη ασφάλεια στις online πληρωμές σας.</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="photos/coffee.jpg" alt="listLogo" width="400px" height="300px">
+                </li>
+            </ul>
+            <a href="../online_order_system/html/show_shops.html">Περισσότερα</a>
+        </div>
+    </main>
+    <footer>
+        <ion-icon name="color-palette-sharp"></ion-icon> Designed by Theodoros Giannopoulos and Giorgos Konstantos
+        <ion-icon name="brush-sharp"></ion-icon>
+    </footer>
+    <script>
+        document.querySelector('#ePlanningButton').addEventListener('click' , () => location.href = "../plan_list/html/show_list.html");
+        document.querySelector('#eHouseButton').addEventListener('click' , () => location.href = "../Manage_Home_Devices/html/home.html");
+        document.querySelector('#eCareButton').addEventListener('click' , () => location.href ="../Look_After_Elders/html/elderly.html");
+        document.querySelector('#OnlineOrderButton').addEventListener('click' , () => location.href = "../online_order_system/html/show_shops.html");
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

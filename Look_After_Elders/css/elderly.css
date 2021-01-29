@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/*  <header>    */
+
+header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #537791;
+    color:white;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+header ul li{
+    cursor: pointer;
+}
+
+header ul li:first-child{
+  cursor:default;
+}
+
+header ul li a{
+  text-decoration: none;
+  color:#fff;
+}
+
+body {
+  background-color: #e7e6e1;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+}
+
+
+.right {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+
+}
+
+
+.left {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+
+}
+
+main {
+  min-height: calc(100vh - 135px);
+}
+
+footer {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #384955;
+  color: #F7F6E7;
+  font-size: 110%;
+}
+
+/* Κώδικας μορφοποίησης dropdown */
+.dropbtn {
+  background-color: #080807dc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #537791;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c1c0b9;
+  min-width: 700px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+
+
+ion-icon {
+  font-size: 80px;
+}
+
+
+html {
+  font-family: 'Lora', sans-serif;
+  width: 100%;
+}
+
+
+/* Κώδικας μορφοποίησης επικεφαλίδας 'Καλωσήρθατε' */
+h1 {
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+}
+
+/* Κώδικας μορφοποίησης επικεφαλίδων κουμπιών */
+h3 {
+  font-size: 25px;
+}
+
+/* Κώδικας μορφοποίησης dropdown box για supermarket. */
+input,
+span,
+label,
+textarea {
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+
+input.question,
+textarea.question {
+  font-size: 50px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+}
+
+
+input.question+label,
+textarea.question+label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid #537791;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus+label,
+textarea.question:focus+label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus+label>span,
+input.question:valid+label>span {
+  top: -100px;
+  font-size: 22px;
+  color: #333;
+}
+
+textarea.question:focus+label>span,
+textarea.question:valid+label>span {
+  top: -150px;
+  font-size: 22px;
+  color: #333;
+}
+
+input.question:valid+label,
+textarea.question:valid+label {
+  border-color: #537791;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question+label>span,
+textarea.question+label>span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 30px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+input.question:valid~a[type="submit"],
+textarea.question:valid~a[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid~a[type="submit"],
+textarea.question:invalid~a[type="submit"] {
+  display: none;
+}
+
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Κώδικας μορφοποίησης dropdown box για πρώτες βοήθειες. */
+
+.toggle {
+  --uiToggleSize: var(--toggleSize, 1.25rem);
+  --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+  --uiToggleColor: var(--toggleColor, #537791);
+
+  display: var(--toggleDisplay, inline-flex);
+  position: relative;
+}
+
+.toggle__input {
+
+  width: var(--uiToggleSize);
+  height: var(--uiToggleSize);
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+
+.toggle__label {
+  display: inline-flex;
+  min-height: var(--uiToggleSize);
+  padding-left: calc(var(--uiToggleSize) + var(--toggleIndent, .4em));
+}
+
+.toggle__input:not(:disabled)~.toggle__label {
+  cursor: pointer;
+}
+
+
+.toggle__label::after {
+  content: "";
+  box-sizing: border-box;
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiToggleSize);
+
+  background-color: transparent;
+  border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.toggle__input:checked~.toggle__label::after {
+  background-color: var(--uiToggleColor);
+}
+
+.toggle__text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.toggle__label::before {
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: var(--uiToggleSize);
+  /* 1 */
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-color: var(--toggleArrowColor, rgb(243, 239, 239));
+
+  position: absolute;
+  top: .5428em;
+  left: .25em;
+  z-index: 3;
+
+  transform-origin: left top;
+  transform: rotate(-40deg) skew(10deg);
+}
+
+.toggle__input:checked~.toggle__label::before {
+  --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+
+  width: .4em;
+  height: .2em;
+  border-left-width: var(--uiToggleArrowWidth);
+  border-bottom-width: var(--uiToggleArrowWidth);
+}
+
+
+.toggle:focus-within {
+  outline: var(--toggleOutlineWidthFocus, 3px) solid var(--toggleOutlineColorFocus, currentColor);
+  outline-offset: var(--toggleOutlineOffsetFocus, 5px);
+}
+
+
+.toggle__input:disabled~.toggle__label {
+  opacity: var(--toggleOpacityDisabled, .24);
+  cursor: var(--toggleCursorDisabled, not-allowed);
+  user-select: none;
+}
+
+
+.toggle__label::after {
+  border-radius: var(--toggleBorderRadius, 2px);
+}
+
+
+.toggle__input:not(:disabled)~.toggle__label::before {
+  will-change: width, height;
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked~.toggle__label::before {
+  opacity: 1;
+  transition: opacity .1s ease-out .25s, width .1s ease-out .5s, height .2s ease-out .3s;
+}
+
+.toggle__input:not(:disabled)~.toggle__label::after {
+  will-change: background-color;
+  transition: background-color .2s ease-out;
+}
+
+
+.page__custom-settings {
+  --toggleColor: #0f0e0f;
+  --toggleOutlineColorFocus: #690e90;
+  --toggleSize: 2rem;
+}
+
+
+.page {
+  box-sizing: border-box;
+  max-width: 45rem;
+  padding: 2.75rem 2rem 2.5rem;
+  margin: auto;
+
+  background-color: #c1c0b9;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: 2px;
+}
+
+.page__section {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.page__section:nth-child(n+2) {
+  margin-top: 3rem;
+}
+
+.page__custom-settings {
+  --pageToggleTextFontSize: 1.25rem;
+}
+
+.page__name {
+  width: 100%;
+}
+
+.page__name::first-letter {
+  text-transform: uppercase;
+}
+
+.page__toggle {
+  margin-top: 1.25rem;
+  margin-right: 1.5rem;
+  font-size: var(--pageToggleTextFontSize);
+}
+
+
+/* Κώδικας μορφοποιησης κουμπιών 'Καταχώρηση' */
+a.button3 {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: #537791;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button3:hover {
+  background-color: #4095c6;
+}
+
+@media all and (max-width:30em) {
+  a.button3 {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+
