@@ -10,27 +10,27 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <header>
         <ul>
             <li>Things of Internet</li>
-            <li>FAQ</li>
-            <li>Πληροφορίες</li>
+            <li><a href="../misc/html/faq.html">FAQ</a></li>
         </ul>
     </header>
     <nav>
         <ul>
             <li>Συντόμευση σε:</li>
-            <li>e-planning</li>
-            <li>e-house</li>
-            <li>e-care</li>
-            <li>Online Order</li>
+            <li id="ePlanningButton">e-planning</li>
+            <li id="eHouseButton">e-house</li>
+            <li id="eCareButton">e-care</li>
+            <li id="OnlineOrderButton">Online Order</li>
         </ul>
     </nav>
     <main>
         <div class="plan">
             <ul>
                 <li>
-                    <img src="photos/kitchen.jpg" alt="listLogo" width="400px" height="300px">
+                    <img src="photos/PlanListLogo.jpg" alt="listLogo" width="400px" height="300px">
                 </li>
                 <li class='plan-description'>
                     <p>
@@ -45,7 +45,7 @@
                     </ul>
                 </li>
             </ul>
-            <a href="#">Περισσότερα</a>
+            <a href="../plan_list/html/show_list.html">Περισσότερα</a>
         </div>
         <div class="house">
             <ul>
@@ -64,7 +64,7 @@
                     <img src="photos/kitchen.jpg" alt="listLogo" width="400px" height="300px">
                 </li>
             </ul>
-            <a href="#">Περισσότερα</a>
+            <a href="../Manage_Home_Devices/html/home.html">Περισσότερα</a>
         </div>
         <div class="care">
             <ul>
@@ -83,7 +83,7 @@
                     </ul>
                 </li>
             </ul>
-            <a href="#">Περισσότερα</a>
+            <a href="../Look_After_Elders/html/elderly.html">Περισσότερα</a>
         </div>
         <div class="order">
             <ul>
@@ -102,13 +102,20 @@
                     <img src="photos/coffee.jpg" alt="listLogo" width="400px" height="300px">
                 </li>
             </ul>
-            <a href="#">Περισσότερα</a>
+            <a href="../online_order_system/html/show_shops.html">Περισσότερα</a>
         </div>
     </main>
     <footer>
         <ion-icon name="color-palette-sharp"></ion-icon> Designed by Theodoros Giannopoulos and Giorgos Konstantos
         <ion-icon name="brush-sharp"></ion-icon>
     </footer>
+    <script>
+        document.querySelector('#ePlanningButton').addEventListener('click' , () => location.href = "../plan_list/html/show_list.html");
+        document.querySelector('#eHouseButton').addEventListener('click' , () => location.href = "../Manage_Home_Devices/html/home.html");
+        document.querySelector('#eCareButton').addEventListener('click' , () => location.href ="../Look_After_Elders/html/elderly.html");
+        document.querySelector('#OnlineOrderButton').addEventListener('click' , () => location.href = "../online_order_system/html/show_shops.html");
+    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

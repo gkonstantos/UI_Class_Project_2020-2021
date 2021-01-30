@@ -21,6 +21,11 @@ header {
     font-size: 1.4rem;
 }
 
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header ul {
     display: flex;
     list-style-type: none;
@@ -67,6 +72,8 @@ input[type="button"] {
     color: #fcfcfc;
     cursor: pointer;
     transition: all 0.5s;
+    width: 13.5rem;
+    height: 2rem;
 }
 
 input[type="button"]:hover {
@@ -87,9 +94,8 @@ input[type="time"] {
 footer {
     text-align: center;
     background-color: #384955;
-    color: #fcfcfc;
-    font-size: 1.2rem;
-    word-spacing: 0.5rem;
+    color: #F7F6E7;
+    font-size: 110%;
 }
 
 main {
@@ -134,3 +140,6 @@ nav ul li{
     cursor: pointer;
 }
 
+nav ul li:nth-child(2){
+    cursor: auto;
+}

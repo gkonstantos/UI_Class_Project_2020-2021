@@ -15,14 +15,14 @@
   <header>
     <ul>
       <li>E-Planning</li>
-      <li>FAQ</li>
-      <li>Πληροφορίες</li>
+      <li><a href="../../misc/html/faq.html">FAQ</a></li>
+      <li><a href="../../homepage/index.html">Αρχική σελίδα</a></li>
     </ul>
   </header>
   <nav>
     <ul>
       <li id="add_route">Προσθήκη διαδρομής</li>
-      <li>Καθαρισμός Λίστας</li>
+      <li id="Clear_Route_List">Καθαρισμός Λίστας</li>
     </ul>
   </nav>
   <main>
@@ -91,6 +91,8 @@
         <li id="begin_hour"></li>
         <li></li>
         <li id="end_hour"></li>
+        <li></li>
+        <li><input type="button" id="close_route_details" value="Κλείσιμο λεπτομερειών διαδρομής"></li>
       </ul>
     </div>
   </main>
@@ -155,7 +157,8 @@
     </div>
   </div>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-  <script src="../js/show_list.js"></script>
+  <script src="../js/show_levels_of_crowding.js"></script>
+  <script src="../js/refactoring.js"></script>
 </body>
 
 </html>

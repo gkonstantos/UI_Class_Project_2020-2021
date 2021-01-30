@@ -13,15 +13,6 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-
-
-
-
-
-
-
-
-
 var s = Snap(document.getElementById("clock"));
 
 var seconds = s.select("#seconds"),
@@ -186,7 +177,11 @@ document.querySelectorAll('.Button').forEach(confirm_order_button => {
         } else if ((card_number.isEmpty() || card_date.isEmpty() || card_name.isEmpty()) && confirm_order_button.id === "credit_card") {
             document.querySelector('#alert_message').innerHTML = "Έχετε αφήσει κάποιο πεδίο στη χρεωστική κάρτα κενό.";
             document.querySelector('.modal').style.display = "block";
-        } else alert("komple");
+        } 
+        else{
+            alert("Η παραγγελία σας καταχωρήθηκε.");
+            location.href = "../../homepage/index.html";
+        };
     });
 });
 

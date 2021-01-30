@@ -22,6 +22,11 @@ header {
     font-size: 1.4rem;
 }
 
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header ul,
 nav ul,
 .list-item ul {
@@ -36,6 +41,9 @@ nav ul li {
     cursor: pointer;
 }
 
+header ul li:first-child{
+    cursor: auto;
+}
 /*  </header>(</nav>)   */
 
 /*  <nav>   */
@@ -58,7 +66,7 @@ main,
 
 main {
     padding-top: 2.5rem;
-    min-height: calc(100vh - 209px);
+    min-height: calc(100vh - 213px);
     font-size: 1.125rem;
 }
 
@@ -98,10 +106,11 @@ main {
 
 footer {
     text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: #384955;
-    color: #fcfcfc;
-    font-size: 1.2rem;
-    word-spacing: 0.5rem;
+    color: #F7F6E7;
+    font-size: 110%;
 }
 
 /*  </footer>   */
