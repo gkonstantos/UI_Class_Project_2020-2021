@@ -73,12 +73,27 @@ function Load_List() {
 
 document.querySelector('#save_changes').addEventListener('click', () => {
     let inputs = document.querySelectorAll('input[type="text"]');
-    for (let i = 0; i < inputs.length; i++) {
+    let waypoints = [];
+    inputs.forEach( input => {
+        if(input.id.includes("waypoint"))
+            waypoints.push(input);
+    });
+    
+    for (let i = 0; i < inputs.length; i++) 
         if (!inputs[i].id.includes("waypoint") && !inputs[i].value.isEmpty())
-            route[i] = inputs[i].value;
-        else if (inputs[i].id.includes("waypoint") && !inputs[i].value.isEmpty())
-            route[7][i - 6] = inputs[i].value;
-    }
+            route[i+1] = inputs[i].value;//+1 for leaving the route id untouched.
+    let i = 0;
+    route[7].forEach( (waypoint,index) => {
+        waypoint[0] = waypoints[i].value;
+        waypoint[1] = waypoints[i+1].value;
+        i += 2;
+    });
+
+    let time_inputs = document.querySelectorAll("input[type='time']");
+    
+    route [5] = time_inputs[0].value.isEmpty() ? route[5] : time_inputs[0].value;
+    route [6] = time_inputs[1].value.isEmpty() ? route[1] : time_inputs[0].value;
+    
     Save_Route_To_Array();
     Save_List();
     Return_To_ePlanning();
